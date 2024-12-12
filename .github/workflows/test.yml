@@ -1,15 +1,18 @@
-name: Publish
+name: Test
 
 on: 
   workflow_dispatch:
   push:
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
-  build:
-    name: Build distribution
-    runs-on: ubuntu-latest
+  test:
+    name: Test
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
         python-version:
           - "3.10"
           - "3.11"
