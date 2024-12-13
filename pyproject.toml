@@ -1,6 +1,6 @@
 [project]
 name = "example_package_m67"
-version = "0.1.0"
+version = "0.1.1"
 authors = [{ name = "Adrian Gao", email = "adrian.gao@outlook.com" }]
 description = "A test for packaging"
 readme = "README.md"
@@ -13,7 +13,4 @@ classifiers = [
 dependencies = []
 
 [dependency-groups]
-dev = [
-    "pytest>=8.3.4",
-    "ruff>=0.8.2",
-]
+dev = ["pytest>=8.3.4", "ruff>=0.8.2"]
