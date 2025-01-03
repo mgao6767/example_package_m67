@@ -1,6 +1,6 @@
 [project]
 name = "example_package_m67"
-version = "0.1.1"
+version = "0.1.2"
 authors = [{ name = "Adrian Gao", email = "adrian.gao@outlook.com" }]
 description = "A test for packaging"
 readme = "README.md"
